@@ -3,12 +3,12 @@ import tensorflow as tf
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('plant_classifier.hdf5')
+  model=tf.keras.models.load_model('improved_model.h5')
   return model
 model=load_model()
 st.write("""# Weather Classification"""
 )
-file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
+file=st.file_uploader("Choose weather photo from computer",type=["jpg","png"])
 A
 import cv2
 from PIL import Image,ImageOps
