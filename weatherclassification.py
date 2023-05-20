@@ -6,8 +6,7 @@ def load_model():
   model=tf.keras.models.load_model('plant_classifier.hdf5')
   return model
 model=load_model()
-st.write("""
-# Weather Classification
+st.write("""# Weather Classification"""
 )
 file=st.file_uploader("Choose plant photo from computer",type=["jpg","png"])
 A
